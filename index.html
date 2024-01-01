@@ -12,7 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Bookmark Website</title>
 </head>
-<body>
-    <h1 class="text-3xl">Simple Tailwind Starter</h1>
+<body class="overflow-x-hidden">
+    <div class="container relative mx-auto p-6">
+        <!-- Flex container for nav items -->
+        <div class="flex items-center justify-between space-x-20 my-6">
+            <!-- Logo -->
+            <div class="z-30">
+                <img src="images/logo-bookmark.svg" alt="" id="logo">
+            </div>
+
+
+            <!-- Menu Items -->
+            <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+                <a href="#features" class="tracking-widest hover:text-softRed">Featured</a>
+                <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
+                <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
+
+                <a href="#" class="px-8 py-2 text-white bg-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white">Login</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
